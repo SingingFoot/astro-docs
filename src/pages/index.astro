@@ -1,14 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import '../styles/global.css';
 ---
 
 <Layout title="API Documentation">
 	<main>
 
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
+		<Header />
 
 		<h1>API <span class="text-gradient">Documentation</span></h1>
 		<p class="instructions">
@@ -37,6 +39,7 @@ import Card from '../components/Card.astro';
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
+		<Footer />
 	</main>
 </Layout>
 
